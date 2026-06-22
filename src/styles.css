@@ -264,6 +264,14 @@ img {
   box-shadow: var(--shadow);
 }
 
+/* Normalize profile image proportions */
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
 .caption {
   padding: 0.85rem 1rem;
   color: var(--muted);
@@ -303,6 +311,14 @@ img {
 .feature-icon {
   width: 56px;
   height: 56px;
+  display: inline-block;
+}
+
+/* Lucide icon wrapper */
+.feature-icon svg,
+.interest-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .feature-title {
